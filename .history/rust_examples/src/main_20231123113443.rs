@@ -8,7 +8,9 @@ fn main() {
     println!("Ahlan Wa Sahlan Welcome to my app");
 
     //hello_user::start_app();
+
     //calc::calc_app();
+
     //variable::var_test();
 
     flow_control::flow_control();
