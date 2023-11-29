@@ -14,29 +14,12 @@ enum Operation {
 pub fn calc_app() {
     println!("Ahlan wa Sahlan to Zakiy Artihemetics Calculator !");
 
-    calc_v1();
+   // calc_v1
+   calc_v1();
 }
 
-fn calc_v1() {
-    let num1 = get_number("Enter le  premier nombre : ");
-    let num2 = get_number("Enter le second mombre : ");
+fn calc_v1(){
 
-    println!("Choisissez L'operation : ");
-    println!("1: Addition");
-    println!("2: Soustraction");
-    println!("3: Multiplication");
-    println!("4: Division ");
-
-    let choice = get_choice();
-
-    // perform operation
-    match choice {
-        1 => perform_calc(Operation::ADD, num1, num2),
-        2 => perform_calc(Operation::MINUS, num1, num2),
-        3 => perform_calc(Operation::MULTIPLY, num1, num2),
-        4 => perform_calc(Operation::DIVIDE, num1, num2),
-        _ => println!("Choix invalide !"),
-    }
 }
 
 // get a number

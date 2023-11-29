@@ -14,10 +14,6 @@ enum Operation {
 pub fn calc_app() {
     println!("Ahlan wa Sahlan to Zakiy Artihemetics Calculator !");
 
-    calc_v1();
-}
-
-fn calc_v1() {
     let num1 = get_number("Enter le  premier nombre : ");
     let num2 = get_number("Enter le second mombre : ");
 
@@ -37,6 +33,10 @@ fn calc_v1() {
         4 => perform_calc(Operation::DIVIDE, num1, num2),
         _ => println!("Choix invalide !"),
     }
+}
+
+fn calc_v1(){
+    
 }
 
 // get a number

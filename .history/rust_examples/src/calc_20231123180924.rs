@@ -1,6 +1,6 @@
 use std::io;
 
-/// Different types of Operation
+/// Different types of Operation 
 enum Operation {
     ADD,
     MINUS,
@@ -14,10 +14,6 @@ enum Operation {
 pub fn calc_app() {
     println!("Ahlan wa Sahlan to Zakiy Artihemetics Calculator !");
 
-    calc_v1();
-}
-
-fn calc_v1() {
     let num1 = get_number("Enter le  premier nombre : ");
     let num2 = get_number("Enter le second mombre : ");
 
@@ -44,6 +40,10 @@ pub fn get_number(prompt: &str) -> f64 {
     loop {
         println!("{}", prompt);
         let mut input = String::new();
+
+        io::stdin()
+            .read_line(&mut input)
+            .expect("Failed to read line");
 
         io::stdin()
             .read_line(&mut input)
@@ -92,3 +92,5 @@ fn perform_calc(op: Operation, num1: f64, num2: f64) {
 
     println!("Resultat {}", result)
 }
+
+// get arithemetic operator

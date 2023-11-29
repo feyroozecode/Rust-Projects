@@ -14,10 +14,15 @@ enum Operation {
 pub fn calc_app() {
     println!("Ahlan wa Sahlan to Zakiy Artihemetics Calculator !");
 
-    calc_v1();
+   // calc_v1
+   calc_v1();
 }
 
-fn calc_v1() {
+fn dynamic_calc_v1() {
+    let inputs : Vec<String> = vec![] 
+}
+
+fn calc_v1(){
     let num1 = get_number("Enter le  premier nombre : ");
     let num2 = get_number("Enter le second mombre : ");
 

@@ -14,10 +14,6 @@ enum Operation {
 pub fn calc_app() {
     println!("Ahlan wa Sahlan to Zakiy Artihemetics Calculator !");
 
-    calc_v1();
-}
-
-fn calc_v1() {
     let num1 = get_number("Enter le  premier nombre : ");
     let num2 = get_number("Enter le second mombre : ");
 
@@ -38,6 +34,8 @@ fn calc_v1() {
         _ => println!("Choix invalide !"),
     }
 }
+
+fn first
 
 // get a number
 pub fn get_number(prompt: &str) -> f64 {
