@@ -8,26 +8,22 @@ fn fizzBuzzer() /*-> String*/
 
     for i in 0..100 {
         let mut output = String::new();
-        
-         if i % 3 == 0 && i % 5 == 0 {
-             let mut output = String::new();
+
+        if i % 3 == 0 && i % 5 == 0 {
+            output = responses[0].to_string() + &responses[1].to_string();
 
             println!("{}", output);
-        } 
-        else if i % 3 == 0 {
+        } else if i % 3 == 0 {
             output = responses[0].to_string();
             println!("{}", output);
-
-        } 
-        else if i % 5 == 0 {
+        } else if i % 5 == 0 {
             output = responses[1].to_string();
-            
+
             println!("{}", output);
         }
 
         output = i.to_string();
 
         println!("{}", output);
-
     }
 }
